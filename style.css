@@ -1613,3 +1613,35 @@ main {
 .top-logo i {
   margin-right: var(--space-8);
 }
+.top-logo {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-8);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--blue-main);
+  z-index: 1100;
+  text-align: right;
+  flex-direction: row;
+}
+
+.top-logo i {
+  margin-top: 2px;
+  color: var(--blue-main);
+}
+
+.top-logo-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+}
+
+.top-logo-sub {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--gray-main);
+  line-height: 1.2;
+}
