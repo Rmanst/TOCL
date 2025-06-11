@@ -1590,3 +1590,26 @@ main {
     margin-bottom: var(--space-8);
   }
 }
+/* 左上角 logo 圖片 */
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* 右上角 Transducer on Chip Limited 標語 */
+.top-logo {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--blue-main);
+  z-index: 1100;
+}
+
+.top-logo i {
+  margin-right: var(--space-8);
+}
