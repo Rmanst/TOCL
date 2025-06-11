@@ -1645,3 +1645,49 @@ main {
   color: var(--gray-main);
   line-height: 1.2;
 }
+/* 左上角 LOGO 圖片 */
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* 右上角公司標語 */
+.top-logo {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-8);
+  text-align: right;
+  z-index: 1500;
+  max-width: 240px;
+}
+
+.top-logo i {
+  margin-top: 2px;
+  font-size: var(--font-size-lg);
+  color: var(--blue-main);
+}
+
+.top-logo-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--blue-main);
+  line-height: 1.2;
+}
+
+.top-logo-sub {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--gray-main);
+  line-height: 1.2;
+}
+
+/* 手機版隱藏標語 */
+@media (max-width: 768px) {
+  .top-logo {
+    display: none;
+  }
+}
