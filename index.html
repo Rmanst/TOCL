@@ -3,100 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>計量傳感器科技 - 專業測量解決方案</title>
+    <title>計量傳感器 - 專業測量解決方案</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header + 右上角標語 -->
-<header class="header">
 
-    <!-- ✅ 右上角文字 LOGO：放在 nav 之前 -->
-    <div class="top-logo">
-        <div>
-            <div class="top-logo-title">Transducer on Chip Limited</div>
-            <div class="top-logo-sub">香港商速玥有限公司</div>
-        </div>
-    </div>
 
-        <nav class="container">
-            <div class="nav-wrapper">
-                <!-- 左上角圖片 LOGO -->
-                <div class="logo">
-                    <img src="AG_h_ct_bkw_15cm.jpg" alt="Logo" class="logo-img">
-                </div>
+<!-- Navigation Header -->
+<header class="header-full">
 
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link active">關於我們</a></li>
-                    <li class="dropdown">
-                        <a href="#meters" class="nav-link">計量表 <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-content">
-                            <div class="dropdown-section">
-                                <h4>通用儀器</h4>
-                                <a href="#meters">秤</a>
-                                <a href="#meters">三用電表</a>
-                                <a href="#meters">電池表</a>
-                            </div>
-                            <div class="dropdown-section">
-                                <h4>能源計量</h4>
-                                <a href="#meters">電能表</a>
-                                <a href="#meters">流體表</a>
-                                <a href="#meters">流氣表</a>
-                            </div>
-                            <div class="dropdown-section">
-                                <h4>醫療健康</h4>
-                                <a href="#meters">耳溫槍</a>
-                                <a href="#meters">血壓計</a>
-                                <a href="#meters">血糖計</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#portable" class="nav-link">手攜產品 <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-content">
-                            <div class="dropdown-section">
-                                <h4>電池</h4>
-                                <a href="#portable">1.5V電池系列</a>
-                                <a href="#portable">鋰電池</a>
-                            </div>
-                            <div class="dropdown-section">
-                                <h4>電源配件</h4>
-                                <a href="#portable">電源盒</a>
-                                <a href="#portable">紅外線測溫頭</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="#sensors" class="nav-link">傳感器</a></li>
-                    <li><a href="#memory" class="nav-link">記憶體</a></li>
-                    <li class="dropdown">
-                        <a href="#power-batteries" class="nav-link">動力電池 <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-content">
-                            <div class="dropdown-section">
-                                <h4>應用領域</h4>
-                                <a href="#power-batteries">電動車</a>
-                                <a href="#power-batteries">飛行器</a>
-                                <a href="#power-batteries">儲能設備</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="#contact" class="nav-link">聯絡我們</a></li>
-                </ul>
-                
-                <div class="nav-actions">
-                    <button class="btn btn--outline" onclick="showSection('purchase')">
-                        <i class="fas fa-shopping-cart"></i> 購買
-                    </button>
-                    <button class="btn btn--primary" onclick="showSection('support')">
-                        <i class="fas fa-headset"></i> 客訴服務
-                    </button>
-                </div>
-                
-                <button class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      
+      <!-- 語言/連結 -->
+      <div class="top-left">
+        <nav class="top-nav">
+          <a href="#">中文</a> |
+          <a href="#">English</a> |
+          <a href="#">在地</a> |<br>
+          <a href="#">形象</a> |
+          <a href="#">購買</a> |
+          <a href="#">客訴</a> |<br>
+          <a href="#">使用</a> |
+          <a href="#">客訴</a> |<br>
+          <a href="#">首頁</a> |
+          <a href="#">前一頁</a>
         </nav>
-    </header>
+      </div>
+
+      <!-- 中央標題 -->
+      <div class="top-center">
+        <div class="header-col3">計量 傳感器</div>
+      </div>
+
+      <!-- 公司資訊 -->
+      <div class="top-right">
+        <div class="company-info">
+          <div>Transducer on Chip Limited</div>
+          <div>香港商速玥有限公司</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 主導覽列 -->
+  <nav class="main-nav">
+    <div class="nav-wrapper">
+
+      <!-- Logo + 公司名稱 -->
+      <div class="logo">
+        <a href="index.html"><img src="logo2.jpg" alt="Transducer on Chip" /></a>
+      </div>
+
+      <!-- 導覽選單 -->
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">關於我們</a></li>
+        <li class="dropdown">
+          <a href="#meters" class="nav-link">計量表 <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <div class="dropdown-section">
+              <h4>通用儀器</h4>
+              <a href="#meters">秤</a>
+              <a href="#meters">三用電表</a>
+              <a href="#meters">電池表</a>
+            </div>
+            <div class="dropdown-section">
+              <h4>能源計量</h4>
+              <a href="#meters">電能表</a>
+              <a href="#meters">流體表</a>
+              <a href="#meters">流氣表</a>
+            </div>
+            <div class="dropdown-section">
+              <h4>醫療健康</h4>
+              <a href="#meters">耳溫槍</a>
+              <a href="#meters">血壓計</a>
+              <a href="#meters">血糖計</a>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#portable" class="nav-link">手攜產品 <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <div class="dropdown-section">
+              <h4>電池</h4>
+              <a href="#portable">1.5V電池系列</a>
+              <a href="#portable">鋰電池</a>
+            </div>
+            <div class="dropdown-section">
+              <h4>電源配件</h4>
+              <a href="#portable">電源盒</a>
+              <a href="#portable">紅外線測溫頭</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#sensors" class="nav-link">傳感器</a></li>
+        <li><a href="#memory" class="nav-link">記憶體</a></li>
+        <li class="dropdown">
+          <a href="#power-batteries" class="nav-link">動力電池 <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <div class="dropdown-section">
+              <h4>應用領域</h4>
+              <a href="#power-batteries">電動車</a>
+              <a href="#power-batteries">飛行器</a>
+              <a href="#power-batteries">儲能設備</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#contact" class="nav-link">聯絡我們</a></li>
+      </ul>
+
+      <!-- 行動與選單按鈕 -->
+      <div class="nav-actions">
+        <button class="btn btn--outline" onclick="showSection('purchase')">
+          <i class="fas fa-shopping-cart"></i> 購買
+        </button>
+        <button class="btn btn--primary" onclick="showSection('support')">
+          <i class="fas fa-headset"></i> 客訴服務
+        </button>
+        <button class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
 
     <!-- Main Content -->
     <main>
