@@ -1601,7 +1601,7 @@ main {
  .header-col3 { flex:1; font-size:1.5rem; font-weight:600; color:var(--color-text-primary); text-align:center; }
 
 .company-info div {
-  width: 250px; /* 根據你想要的長度設定 */
+  width: 200px; /* 根據你想要的長度設定 */
   text-align: right;
  text-valign: center;
 
