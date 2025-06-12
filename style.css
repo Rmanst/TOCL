@@ -85,7 +85,7 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
     0 2px 4px -1px rgba(0, 0, 0, 0.02);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04),
-    0 6px 6px -2px rgba(0, 0, 0, 0.02);
+    0 4px 6px -2px rgba(0, 0, 0, 0.02);
   --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15),
     inset 0 -1px 0 rgba(0, 0, 0, 0.03);
 
@@ -1590,104 +1590,128 @@ main {
     margin-bottom: var(--space-8);
   }
 }
-/* 左上角 logo 圖片 */
-.logo-img {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
+
+/* header */
+.header-full {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* 右上角 Transducer on Chip Limited 標語 */
-.top-logo {
-  position: absolute;
-  top: 16px;
-  right: 24px;
+ .header-col3 { flex:1; font-size:1.5rem; font-weight:600; color:var(--color-text-primary); text-align:center; }
+
+.company-info div {
+  width: 250px; /* 根據你想要的長度設定 */
+  text-align: right;
+ text-valign: center;
+
+}
+
+.company-info {
+  display: inline-block;
+}
+
+.top-bar {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+}
+
+.top-bar-inner {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 5px;
+  font-size: 0.85rem;
+}
+
+.top-center {
   display: flex;
   align-items: center;
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-bold);
-  color: var(--blue-main);
-  z-index: 1100;
+  justify-content: center;
 }
 
-.top-logo i {
-  margin-right: var(--space-8);
-}
-.top-logo {
-  position: absolute;
-  top: 16px;
-  right: 24px;
+.top-right {
   display: flex;
-  align-items: flex-start;
-  gap: var(--space-8);
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-bold);
-  color: var(--blue-main);
-  z-index: 1100;
-  text-align: right;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.top-logo i {
-  margin-top: 2px;
-  color: var(--blue-main);
+.company-info {
+  line-height: 1.4;
 }
 
-.top-logo-title {
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-bold);
-  line-height: 1.2;
+
+/* Main Nav */
+.main-nav {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 1.5rem;
 }
 
-.top-logo-sub {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  color: var(--gray-main);
-  line-height: 1.2;
-}
-/* 左上角 LOGO 圖片 */
-.logo-img {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
-}
-
-/* 右上角公司標語 */
-.top-logo {
-  position: absolute;
-  top: 12px;
-  right: 16px;
+.nav-wrapper {
   display: flex;
-  align-items: flex-start;
-  gap: var(--space-8);
-  text-align: right;
-  z-index: 1500;
-  max-width: 240px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.top-logo i {
-  margin-top: 2px;
-  font-size: var(--font-size-lg);
-  color: var(--blue-main);
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.top-logo-title {
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-bold);
-  color: var(--blue-main);
-  line-height: 1.2;
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-.top-logo-sub {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  color: var(--gray-main);
-  line-height: 1.2;
+.nav-link {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
 }
 
-/* 手機版隱藏標語 */
-@media (max-width: 768px) {
-  .top-logo {
-    display: none;
-  }
+.nav-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn--outline {
+  border: 1px solid #007bff;
+  background: transparent;
+  color: #007bff;
+}
+
+.btn--primary {
+  background: #007bff;
+  border: none;
+  color: #fff;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
