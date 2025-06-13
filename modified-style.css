@@ -2042,3 +2042,12 @@ main {
     font-size: var(--font-size-2xl);
   }
 }
+
+/* filepath*/
+header .top-right img.qr-img {
+  width: 18vw !important;
+  max-width: 70px !important;
+  min-width: 64px !important;
+  height: auto !important;
+  display: block !important;
+}

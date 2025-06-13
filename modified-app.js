@@ -91,7 +91,19 @@ function showSection(sectionId) {
     
     // Close mobile menu if open
     closeMobileMenu();
+
+    // 強制補回 class 與樣式
+    const qrImg = document.querySelector('img[src="sQRcode.png"]');
+    if (qrImg) {
+        qrImg.classList.add('qr-img');
+        qrImg.style.width = '18vw';
+        qrImg.style.maxWidth = '120px';
+        qrImg.style.minWidth = '64px';
+        qrImg.style.height = 'auto';
+        qrImg.style.display = 'block';
+    }
 }
+
 
 function updateActiveNavLink(activeLink) {
     // Remove active class from all nav links
