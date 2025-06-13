@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>計量傳感器 - 專業測量解決方案</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modified-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
 <header class="header-full">
 
   <!-- Top Bar -->
-  <div class="top-bar">
+ <div class="top-bar">
     <div class="top-bar-inner">
       
       <!-- 語言/連結 -->
@@ -61,13 +61,13 @@
 
       <!-- 導覽選單 -->
       <ul class="nav-menu">
-        <li><a href="#home" class="nav-link active">關於我們</a></li>
+        <li><a href="about.html" class="nav-link">關於我們</a></li>
         <li class="dropdown">
-          <a href="#meters" class="nav-link">計量表 <i class="fas fa-chevron-down"></i></a>
+          <a href="meters.html" class="nav-link">計量表 <i class="fas fa-chevron-down"></i></a>
           <div class="dropdown-content">
             <div class="dropdown-section">
               <h4>通用儀器</h4>
-              <a href="#meters">秤</a>
+              <a href="meters-1.html">秤</a>
               <a href="#meters">三用電表</a>
               <a href="#meters">電池表</a>
             </div>
@@ -86,7 +86,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a href="#portable" class="nav-link">手攜產品 <i class="fas fa-chevron-down"></i></a>
+          <a href="portable.html" class="nav-link">手攜產品 <i class="fas fa-chevron-down"></i></a>
           <div class="dropdown-content">
             <div class="dropdown-section">
               <h4>電池</h4>
@@ -100,10 +100,10 @@
             </div>
           </div>
         </li>
-        <li><a href="#sensors" class="nav-link">傳感器</a></li>
-        <li><a href="#memory" class="nav-link">記憶體</a></li>
+        <li><a href="sensors.html" class="nav-link">傳感器</a></li>
+        <li><a href="memory.html" class="nav-link">記憶體</a></li>
         <li class="dropdown">
-          <a href="#power-batteries" class="nav-link">動力電池 <i class="fas fa-chevron-down"></i></a>
+          <a href="power-batteries.html" class="nav-link">動力電池 <i class="fas fa-chevron-down"></i></a>
           <div class="dropdown-content">
             <div class="dropdown-section">
               <h4>應用領域</h4>
@@ -113,8 +113,8 @@
             </div>
           </div>
         </li>
-        <li><a href="#sensors" class="nav-link">其他</a></li>
-        <li><a href="#contact" class="nav-link">聯絡我們</a></li>
+        <li><a href="other.html" class="nav-link">其他</a></li>
+        <li><a href="contact.html" class="nav-link">聯絡我們</a></li>
       </ul>
 
       <!-- 行動與選單按鈕 -->
@@ -122,7 +122,7 @@
         <button class="btn btn--outline" onclick="showSection('purchase')">
           <i class="fas fa-shopping-cart"></i> 購買
         </button>
-        <button class="btn btn--primary" onclick="showSection('support')">
+        <button class="btn btn--primary" onclick="location.href='support.html'">
           <i class="fas fa-headset"></i> 客訴服務
         </button>
         <button class="mobile-menu-toggle">
@@ -136,7 +136,6 @@
     <!-- Main Content -->
     <main>
         <!-- Homepage / About Section -->
-        <section id="home" class="section active">
             <!-- Hero Section -->
             <div class="hero">
                 <div class="hero-background"></div>
@@ -199,616 +198,8 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Product Categories -->
-            <div class="products-overview">
-                <div class="container">
-                    <h2>核心產品類別</h2>
-                    <div class="product-grid">
-                        <div class="product-card" onclick="showSection('meters')">
-                            <div class="product-icon">
-                                <i class="fas fa-tachometer-alt"></i>
-                            </div>
-                            <h3>計量表</h3>
-                            <p>從工業級到居家醫療，提供全方位的精準測量解決方案</p>
-                        </div>
-                        
-                        <div class="product-card" onclick="showSection('portable')">
-                            <div class="product-icon">
-                                <i class="fas fa-battery-three-quarters"></i>
-                            </div>
-                            <h3>手攜產品</h3>
-                            <p>可靠的便攜能源與檢測工具，隨時隨地滿足您的需求</p>
-                        </div>
-                        
-                        <div class="product-card" onclick="showSection('sensors')">
-                            <div class="product-icon">
-                                <i class="fas fa-thermometer-half"></i>
-                            </div>
-                            <h3>傳感器</h3>
-                            <p>高靈敏度、高穩定性的核心元件，是您智能產品的感知中樞</p>
-                        </div>
-                        
-                        <div class="product-card" onclick="showSection('memory')">
-                            <div class="product-icon">
-                                <i class="fas fa-memory"></i>
-                            </div>
-                            <h3>記憶體</h3>
-                            <p>為您的設備提供穩定可靠的數據儲存，確保資訊萬無一失</p>
-                        </div>
-                        
-                        <div class="product-card" onclick="showSection('power-batteries')">
-                            <div class="product-icon">
-                                <i class="fas fa-car-battery"></i>
-                            </div>
-                            <h3>動力電池</h3>
-                            <p>驅動未來，為電動車、飛行器與儲能系統提供高效能動力源</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- About Us Brief -->
-            <div class="about-brief">
-                <div class="container">
-                    <div class="about-content">
-                        <h2>關於我們</h2>
-                        <p>APP的普及，帶來生活品質不斷提升。</p>
-                        <p>讓物理能量透過傳感器及芯片，能得到「精準」計量，</p>
-                        <p>讓APP能處理及顯示我們(人及設備)周邊的物理能量。</p>
-                        <p>計量芯片和APP的結合，更進一步帶領傳感器走入我們的生活之中。</p>
-                        <p>我們的產品廣泛應用於工業自動化、醫療健康、能源管理、消費電子等領域，為各行各業的數位轉型提供核心技術支持。</p>
-                        <button class="btn btn--outline" onclick="showAboutDetail()">深入了解</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Product Pages -->
-        <section id="meters" class="section">
-            <div class="page-header">
-                <div class="container">
-                    <h1>計量表 (Meters)</h1>
-                    <p>從工業級到居家醫療，提供全方位的精準測量解決方案</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="product-categories">
-                    <div class="category-section">
-                        <h2>通用儀器</h2>
-                        <div class="product-list">
-                            <div class="product-item">
-                                <i class="fas fa-weight"></i>
-                                <div class="product-info">
-                                    <h3>秤</h3>
-                                    <p>高精度電子秤，適用於各種稱重需求</p>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <i class="fas fa-plug"></i>
-                                <div class="product-info">
-                                    <h3>三用電表</h3>
-                                    <p>測量電壓、電流、電阻的多功能儀表</p>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <i class="fas fa-battery-half"></i>
-                                <div class="product-info">
-                                    <h3>電池表</h3>
-                                    <p>精確檢測電池電量和健康狀況</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="category-section">
-                        <h2>能源計量</h2>
-                        <div class="product-list">
-                            <div class="product-item">
-                                <i class="fas fa-bolt"></i>
-                                <div class="product-info">
-                                    <h3>電能表</h3>
-                                    <p>智能電力計量，支持遠程監控</p>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <i class="fas fa-tint"></i>
-                                <div class="product-info">
-                                    <h3>流體表</h3>
-                                    <p>精確測量液體流量，工業級可靠性</p>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <i class="fas fa-wind"></i>
-                                <div class="product-info">
-                                    <h3>流氣表</h3>
-                                    <p>高精度氣體流量測量解決方案</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="category-section">
-                        <h2>醫療健康</h2>
-                        <div class="product-list">
-                            <div class="product-item">
-                                <i class="fas fa-thermometer"></i>
-                                <div class="product-info">
-                                    <h3>耳溫槍</h3>
-                                    <p>快速準確的體溫測量設備</p>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <i class="fas fa-heartbeat"></i>
-                                <div class="product-info">
-                                    <h3>血壓計</h3>
-                                    <p>專業級血壓監測設備</p>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <i class="fas fa-first-aid"></i>
-                                <div class="product-info">
-                                    <h3>血糖計</h3>
-                                    <p>精確的血糖檢測儀器</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portable" class="section">
-            <div class="page-header">
-                <div class="container">
-                    <h1>手攜產品 (Portable Products)</h1>
-                    <p>可靠的便攜能源與檢測工具，隨時隨地滿足您的需求</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="product-categories">
-                    <div class="category-section">
-                        <h2>電池</h2>
-                        <div class="product-list">
-                            <div class="product-item">
-                                <i class="fas fa-battery-full"></i>
-                                <div class="product-info">
-                                    <h3>1.5V電池系列</h3>
-                                    <p>C、D、AA、N、AAA、AAAA型號電池，長效耐用</p>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <i class="fas fa-battery-three-quarters"></i>
-                                <div class="product-info">
-                                    <h3>鋰電池</h3>
-                                    <p>高能量密度，適用於各種便攜設備</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="category-section">
-                        <h2>電源配件</h2>
-                        <div class="product-list">
-                            <div class="product-item">
-                                <i class="fas fa-cube"></i>
-                                <div class="product-info">
-                                    <h3>電源盒</h3>
-                                    <p>便攜式電源管理解決方案</p>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <i class="fas fa-thermometer-half"></i>
-                                <div class="product-info">
-                                    <h3>紅外線測溫頭</h3>
-                                    <p>非接觸式溫度測量感應器</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="sensors" class="section">
-            <div class="page-header">
-                <div class="container">
-                    <h1>傳感器 (Sensors)</h1>
-                    <p>高靈敏度、高穩定性的核心元件，是您智能產品的感知中樞</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="product-list">
-                    <div class="product-item featured">
-                        <i class="fas fa-thermometer-quarter"></i>
-                        <div class="product-info">
-                            <h3>接觸式溫度計</h3>
-                            <p>高精度接觸式溫度傳感器，適用於各種工業和科研應用</p>
-                            <div class="product-specs">
-                                <span class="spec">高精度 ±0.1°C</span>
-                                <span class="spec">快速響應</span>
-                                <span class="spec">長期穩定</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item featured">
-                        <i class="fas fa-thermometer-half"></i>
-                        <div class="product-info">
-                            <h3>紅外線測溫頭</h3>
-                            <p>非接觸式紅外線溫度感應器，安全便捷的測溫解決方案</p>
-                            <div class="product-specs">
-                                <span class="spec">非接觸測量</span>
-                                <span class="spec">快速檢測</span>
-                                <span class="spec">多點測量</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="memory" class="section">
-            <div class="page-header">
-                <div class="container">
-                    <h1>記憶體 (Memory)</h1>
-                    <p>為您的設備提供穩定可靠的數據儲存，確保資訊萬無一失</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="product-item featured">
-                    <i class="fas fa-memory"></i>
-                    <div class="product-info">
-                        <h3>EEPROM</h3>
-                        <p>電子抹除式可程式唯讀記憶體，提供可靠的非揮發性數據存儲</p>
-                        <div class="product-specs">
-                            <span class="spec">高可靠性</span>
-                            <span class="spec">長壽命</span>
-                            <span class="spec">低功耗</span>
-                            <span class="spec">多容量選擇</span>
-                        </div>
-                        <div class="product-applications">
-                            <h4>應用領域：</h4>
-                            <ul>
-                                <li>微控制器系統參數存儲</li>
-                                <li>設備校準數據保存</li>
-                                <li>用戶配置信息儲存</li>
-                                <li>日誌記錄與追蹤</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="power-batteries" class="section">
-            <div class="page-header">
-                <div class="container">
-                    <h1>動力電池 (Power Batteries)</h1>
-                    <p>驅動未來，為電動車、飛行器與儲能系統提供高效能動力源</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="product-list">
-                    <div class="product-item featured">
-                        <i class="fas fa-car-battery"></i>
-                        <div class="product-info">
-                            <h3>高能量密度電池組</h3>
-                            <p>先進鋰離子技術，提供卓越的能量密度和續航表現</p>
-                            <div class="product-specs">
-                                <span class="spec">高能量密度</span>
-                                <span class="spec">長循環壽命</span>
-                                <span class="spec">快速充電</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item featured">
-                        <i class="fas fa-bolt"></i>
-                        <div class="product-info">
-                            <h3>高功率輸出電池組</h3>
-                            <p>專為高功率應用設計，提供強勁的瞬間功率輸出</p>
-                            <div class="product-specs">
-                                <span class="spec">高功率輸出</span>
-                                <span class="spec">低內阻</span>
-                                <span class="spec">溫度穩定</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="applications-section">
-                    <h2>應用領域</h2>
-                    <div class="application-grid">
-                        <div class="application-card">
-                            <i class="fas fa-car"></i>
-                            <h3>電動車</h3>
-                            <p>為新能源汽車提供可靠的動力電池解決方案</p>
-                        </div>
-                        <div class="application-card">
-                            <i class="fas fa-helicopter"></i>
-                            <h3>飛行器</h3>
-                            <p>輕量化、高性能的航空器用動力電池</p>
-                        </div>
-                        <div class="application-card">
-                            <i class="fas fa-solar-panel"></i>
-                            <h3>儲能設備</h3>
-                            <p>大容量儲能系統的核心電池技術</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="page-header">
-                <div class="container">
-                    <h1>聯絡我們</h1>
-                    <p>歡迎聯繫我們的專業團隊，我們將為您提供最佳的技術解決方案</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <h2>聯絡資訊</h2>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>公司地址</h4>
-                                <p>中正東路的中正東路走七遍<br>計量大樓</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>電話</h4>
-                                <p>+886-2-1234-8888</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>電子郵件</h4>
-                                <p>raymond.yu@ic-fortune.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>營業時間</h4>
-                                <p>週一至週五 09:00-18:00</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-form">
-                        <h2>線上諮詢</h2>
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label class="form-label">諮詢類型</label>
-                                <select class="form-control" name="inquiryType" required>
-                                    <option value="">請選擇諮詢類型</option>
-                                    <option value="product">產品詢價</option>
-                                    <option value="technical">技術支援</option>
-                                    <option value="partnership">合作提案</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">姓名</label>
-                                <input type="text" class="form-control" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">公司/組織</label>
-                                <input type="text" class="form-control" name="company">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">電話</label>
-                                <input type="tel" class="form-control" name="phone" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">電子郵件</label>
-                                <input type="email" class="form-control" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">詢問內容</label>
-                                <textarea class="form-control" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn--primary btn--full-width">送出諮詢</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="purchase" class="section">
-            <div class="page-header">
-                <div class="container">
-                    <h1>購買資訊</h1>
-                    <p>我們提供專業的B2B採購服務，為您量身訂製最適合的解決方案</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="purchase-process">
-                    <h2>購買流程</h2>
-                    <div class="process-steps">
-                        <div class="step">
-                            <div class="step-number">1</div>
-                            <h3>需求諮詢</h3>
-                            <p>與我們的專業團隊討論您的具體需求</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">2</div>
-                            <h3>產品選型</h3>
-                            <p>根據您的應用場景推薦最適合的產品</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">3</div>
-                            <h3>報價確認</h3>
-                            <p>提供詳細的產品報價和技術規格</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">4</div>
-                            <h3>合約簽署</h3>
-                            <p>確認訂單詳情並簽署購買合約</p>
-                        </div>
-                        <div class="step">
-                            <div class="step-number">5</div>
-                            <h3>生產交付</h3>
-                            <p>按時交付產品並提供技術支援</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="quote-form">
-                    <h2>詢價表單</h2>
-                    <form id="quoteForm">
-                        <div class="form-group">
-                            <label class="form-label">產品類別</label>
-                            <select class="form-control" name="productCategory" required>
-                                <option value="">請選擇產品類別</option>
-                                <option value="meters">計量表</option>
-                                <option value="portable">手攜產品</option>
-                                <option value="sensors">傳感器</option>
-                                <option value="memory">記憶體</option>
-                                <option value="power-batteries">動力電池</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">預估數量</label>
-                            <input type="number" class="form-control" name="quantity" min="1" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">應用場景</label>
-                            <textarea class="form-control" name="application" rows="3" placeholder="請描述您的應用場景和具體需求" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">聯絡人姓名</label>
-                            <input type="text" class="form-control" name="contactName" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">公司名稱</label>
-                            <input type="text" class="form-control" name="companyName" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">聯絡電話</label>
-                            <input type="tel" class="form-control" name="contactPhone" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">電子郵件</label>
-                            <input type="email" class="form-control" name="contactEmail" required>
-                        </div>
-                        <button type="submit" class="btn btn--primary btn--full-width">提交詢價</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <section id="support" class="section">
-            <div class="page-header">
-                <div class="container">
-                    <h1>客戶服務</h1>
-                    <p>我們致力於提供優質的售後服務，確保您的使用體驗</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="support-grid">
-                    <div class="faq-section">
-                        <h2>常見問題</h2>
-                        <div class="faq-list">
-                            <div class="faq-item">
-                                <h3>產品保固期限是多久？</h3>
-                                <p>我們的產品提供一年保固服務，特殊產品可延長至兩年。保固期內免費維修或更換。</p>
-                            </div>
-                            <div class="faq-item">
-                                <h3>如何獲得技術支援？</h3>
-                                <p>您可以透過電話、郵件或線上表單聯繫我們的技術團隊，我們將在24小時內回覆。</p>
-                            </div>
-                            <div class="faq-item">
-                                <h3>是否提供客製化服務？</h3>
-                                <p>是的，我們提供客製化產品開發服務，可根據您的特殊需求進行產品設計。</p>
-                            </div>
-                            <div class="faq-item">
-                                <h3>產品認證情況如何？</h3>
-                                <p>我們的產品通過CE、FCC、RoHS等國際認證，符合各國法規要求。</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="support-form">
-                        <h2>客訴表單</h2>
-                        <form id="supportForm">
-                            <div class="form-group">
-                                <label class="form-label">問題類型</label>
-                                <select class="form-control" name="issueType" required>
-                                    <option value="">請選擇問題類型</option>
-                                    <option value="quality">產品品質問題</option>
-                                    <option value="technical">技術使用問題</option>
-                                    <option value="delivery">配送問題</option>
-                                    <option value="service">服務問題</option>
-                                    <option value="other">其他問題</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">產品型號</label>
-                                <input type="text" class="form-control" name="productModel">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">購買日期</label>
-                                <input type="date" class="form-control" name="purchaseDate">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">問題描述</label>
-                                <textarea class="form-control" name="issueDescription" rows="5" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">聯絡人姓名</label>
-                                <input type="text" class="form-control" name="contactName" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">聯絡電話</label>
-                                <input type="tel" class="form-control" name="contactPhone" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">電子郵件</label>
-                                <input type="email" class="form-control" name="contactEmail" required>
-                            </div>
-                            <button type="submit" class="btn btn--primary btn--full-width">提交客訴</button>
-                        </form>
-                    </div>
-                </div>
-                
-                <div class="warranty-policy">
-                    <h2>保固政策</h2>
-                    <div class="policy-content">
-                        <div class="policy-item">
-                            <h3>保固範圍</h3>
-                            <ul>
-                                <li>產品製造缺陷</li>
-                                <li>材料品質問題</li>
-                                <li>正常使用下的功能故障</li>
-                            </ul>
-                        </div>
-                        <div class="policy-item">
-                            <h3>保固期限</h3>
-                            <ul>
-                                <li>計量表類：12個月</li>
-                                <li>傳感器類：24個月</li>
-                                <li>電池類：6個月</li>
-                                <li>記憶體類：36個月</li>
-                            </ul>
-                        </div>
-                        <div class="policy-item">
-                            <h3>服務承諾</h3>
-                            <ul>
-                                <li>24小時內回覆客戶查詢</li>
-                                <li>72小時內提供解決方案</li>
-                                <li>免費技術諮詢服務</li>
-                                <li>定期產品維護建議</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -821,20 +212,21 @@
                 <div class="footer-section">
                     <h4>快速連結</h4>
                     <ul>
-                        <li><a href="#home">關於我們</a></li>
-                        <li><a href="#contact">聯絡我們</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
                         <li><a href="#purchase">購買資訊</a></li>
-                        <li><a href="#support">客戶服務</a></li>
+                        <li><a href="support.html">客戶服務</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>產品類別</h4>
                     <ul>
-                        <li><a href="#meters">計量表</a></li>
-                        <li><a href="#portable">手攜產品</a></li>
-                        <li><a href="#sensors">傳感器</a></li>
-                        <li><a href="#memory">記憶體</a></li>
-                        <li><a href="#power-batteries">動力電池</a></li>
+                        <li><a href="meters.html">計量表</a></li>
+                        <li><a href="portable.html">手攜產品</a></li>
+                        <li><a href="sensors.html">傳感器</a></li>
+                        <li><a href="memory.html">記憶體</a></li>
+                        <li><a href="power-batteries.html">動力電池</a></li>
+                        <li><a href="other.html">其他</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -850,6 +242,7 @@
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <!--<script src="modified-app.js"></script>-->
+
 </body>
 </html>
